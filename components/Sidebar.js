@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { MdHomeFilled } from "react-icons/md";
+
+import { MdHomeFilled, MdOutlineClose } from "react-icons/md";
 import { RiAddBoxFill, RiHeartFill, RiSearchLine } from "react-icons/ri";
 import { VscLibrary } from "react-icons/vsc";
 
@@ -10,11 +11,19 @@ export const Sidebar = (props) => {
 
   return (
     <div
-      className={`bg-black fixed top-0 h-full p-6 flex flex-col justify-between md:w-96 ${
-        showSidebar ? "left-0" : "-left-full"
-      } md:left-0`}
+      className={`bg-black fixed top-0 h-full md:p-6 flex flex-col justify-between md:w-96 w-full right-0 md:left-0 md:right-auto ${
+        showSidebar ? "" : "transform translate-x-full md:translate-x-0"
+      } md:left-0 transition-all duration-300`}
     >
-      <div>
+      <div className="md:hidden absolute right-1 top-1 text-white">
+        <button
+          className="text-4xl p-2 box-content"
+          onClick={() => setShowSidebar(false)}
+        >
+          <MdOutlineClose />
+        </button>
+      </div>
+      <div className="hidden md:flex md:flex-col">
         <div className="mb-8">
           <Image
             src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
@@ -68,7 +77,7 @@ export const Sidebar = (props) => {
           </ul>
         </nav>
       </div>
-      <div>
+      <div className="hidden">
         <nav>
           <ul className="flex flex-col gap-y-2">
             <li>
@@ -79,6 +88,52 @@ export const Sidebar = (props) => {
             <li className="mb-4">
               <Link href="#" className="text-xs hover:underline">
                 Privacidad
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div className="md:hidden text-white font-bold p-10 mt-8">
+        <nav>
+          <ul className="flex flex-col gap-y-5">
+            <li>
+              <Link href="#" className="text-2xl">
+                Iniciar sesión
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-2xl">
+                Registrarse
+              </Link>
+            </li>
+            <li className="mt-3 mb-3">
+              <Link href="#" className="text-base">
+                __
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-lg">
+                Premium
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-lg">
+                Ayuda
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-lg">
+                Descargar
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-lg">
+                Privacidad
+              </Link>
+            </li>
+            <li>
+              <Link href="#" className="text-lg">
+                Términos y Condiciones
               </Link>
             </li>
           </ul>

@@ -13,6 +13,7 @@ module.exports = {
           appgray: "#121212",
           grayheader: "#010101",
           lightgray: "#B3B3B3",
+          orangeheader: "#672B17",
         },
       },
     },

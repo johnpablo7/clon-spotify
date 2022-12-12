@@ -1,19 +1,22 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { CgMenu } from "react-icons/cg";
+import { RiSearchLine } from "react-icons/ri";
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
-export const Header = () => {
+export const Header = (props) => {
+  const { setShowSidebar } = props;
+
   return (
-    <header className="fixed left-0 top-0 md:ml-96 w-full md:w-[calc(100%-384px)] bg-spotify-grayheader flex items-center justify-between p-2">
-      <div className="md:ml-5 flex items-center md:gap-2 gap-1">
-        <div className="rounded-full">
-          <VscChevronLeft className="text-3xl hover:cursor-pointer p-1 box-content" />
-        </div>
-        <div className="rounded-full">
-          <VscChevronRight className="text-3xl hover:cursor-pointer p-1 box-content" />
-        </div>
+    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader bg-spotify-orangeheader flex items-center justify-between p-2">
+      {/* DESK */}
+      <div className="hidden md:flex rounded-full md:ml-5 items-center gap-1 text-3xl">
+        <VscChevronLeft className="hover:cursor-pointer p-2 box-content" />
+        <VscChevronRight className="hover:cursor-pointer p-2 box-content" />
       </div>
-      <div className="flex items-center gap-7">
+
+      <div className="hidden md:flex items-center gap-7">
         <Link href="/" className="font-bold hover:text-white transition-colors">
           Regístrate
         </Link>
@@ -23,6 +26,32 @@ export const Header = () => {
         >
           Iniciar sesión
         </Link>
+      </div>
+
+      {/* MOBILE */}
+      <div className="flex items-center w-full justify-between md:hidden">
+        <div className="mx-3">
+          <Image
+            src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_White.png"
+            alt="spotify"
+            width={104}
+            height={32}
+          />
+        </div>
+
+        <Link href="#" className="font-bold text-xl text-white">
+          <RiSearchLine />
+        </Link>
+        <Link
+          href="/"
+          className="py-2 px-6 rounded-full bg-white font-bold text-black text-sm"
+        >
+          ABRIR APLICACIÓN
+        </Link>
+        <CgMenu
+          onClick={() => setShowSidebar(true)}
+          className="text-3xl hover:cursor-pointer p-1 box-content md:hidden"
+        />
       </div>
     </header>
   );
