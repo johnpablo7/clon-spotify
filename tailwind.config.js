@@ -14,7 +14,7 @@ module.exports = {
           appgray: "#121212",
           shadowcard: "#181818",
           hovercard: "#2f2f2f",
-          grayheader: "#010101",
+          grayheader: "#020202",
           lightgray: "#B3B3B3",
           orangeheader: "#672B17",
         },

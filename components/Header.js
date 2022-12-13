@@ -9,11 +9,11 @@ export const Header = (props) => {
   const { setShowSidebar } = props;
 
   return (
-    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader bg-spotify-orangeheader flex items-center justify-between p-2 z-40">
+    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader/90 bg-spotify-orangeheader flex items-center justify-between p-2 z-40">
       {/* DESK */}
-      <div className="hidden md:flex rounded-full md:ml-5 items-center gap-1 text-3xl">
-        <VscChevronLeft className="hover:cursor-pointer p-2 box-content" />
-        <VscChevronRight className="hover:cursor-pointer p-2 box-content" />
+      <div className="hidden md:flex rounded-full md:ml-5 items-center gap-2 text-2xl">
+        <VscChevronLeft className="hover:cursor-pointer p-2 box-content bg-spotify-grayheader/60 rounded-full" />
+        <VscChevronRight className="hover:cursor-pointer p-2 box-content bg-spotify-grayheader/60 rounded-full" />
       </div>
 
       <div className="hidden md:flex items-center gap-7">
@@ -44,7 +44,7 @@ export const Header = (props) => {
         </Link>
         <Link
           href="/"
-          className="py-2 px-6 rounded-full bg-white font-bold text-black text-sm"
+          className="py-2 px-5 rounded-full bg-white font-bold text-black text-sm"
         >
           ABRIR APLICACIÓN
         </Link>

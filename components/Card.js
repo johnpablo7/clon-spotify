@@ -22,8 +22,12 @@ export const Card = () => {
         </button>
       </div>
       <div>
-        <h5 className="font-bold text-white mb-1">Todays Top Hits</h5>
-        <p className="text-sm w-[18ch]">SZA is on top of the Hottest 50!</p>
+        <h5 className="text-center md:text-left font-bold text-white mb-1">
+          Todays Top Hits
+        </h5>
+        <p className="text-center md:text-left md:text-sm md:w-[18ch]">
+          SZA is on top of the Hottest 50!
+        </p>
       </div>
     </Link>
   );
