@@ -13,7 +13,7 @@ export const Sidebar = (props) => {
     <div
       className={`bg-black fixed top-0 h-full md:p-6 flex flex-col justify-between md:w-96 w-full right-0 md:left-0 md:right-auto ${
         showSidebar ? "" : "transform translate-x-full md:translate-x-0"
-      } md:left-0 transition-all duration-300`}
+      } md:left-0 transition-all duration-300 z-50`}
     >
       <div className="md:hidden absolute right-1 top-1 text-white">
         <button

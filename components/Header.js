@@ -9,7 +9,7 @@ export const Header = (props) => {
   const { setShowSidebar } = props;
 
   return (
-    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader bg-spotify-orangeheader flex items-center justify-between p-2">
+    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader bg-spotify-orangeheader flex items-center justify-between p-2 z-40">
       {/* DESK */}
       <div className="hidden md:flex rounded-full md:ml-5 items-center gap-1 text-3xl">
         <VscChevronLeft className="hover:cursor-pointer p-2 box-content" />
@@ -22,7 +22,7 @@ export const Header = (props) => {
         </Link>
         <Link
           href="/"
-          className="py-2 md:py-3 px-4 md:px-6 rounded-full bg-white font-bold text-black hover:scale-105 transition-transform"
+          className="py-2 md:py-3 px-4 md:px-8 rounded-full bg-white font-bold text-black hover:scale-105 transition-transform mr-6"
         >
           Iniciar sesión
         </Link>
