@@ -16,7 +16,7 @@ export const ListAlbums = (props) => {
         </Link>
         <Link
           href="/"
-          className="uppercase text-sm font-bold text-spotify-graytext tracking-[1px] hover:underline"
+          className="uppercase text-sm font-bold text-spotify-silverchalice tracking-[1px] hover:underline"
         >
           mostrar todo
         </Link>

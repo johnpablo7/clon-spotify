@@ -9,11 +9,11 @@ export const Header = (props) => {
   const { setShowSidebar } = props;
 
   return (
-    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-grayheader/90 bg-spotify-orangeheader flex items-center justify-between p-2 z-40">
+    <header className="fixed right-0 top-0 w-full md:w-[calc(100%-384px)] md:bg-spotify-black/90 bg-spotify-espresso flex items-center justify-between p-2 z-40">
       {/* DESK */}
       <div className="hidden md:flex rounded-full md:ml-5 items-center gap-2 text-2xl">
-        <VscChevronLeft className="hover:cursor-pointer p-2 box-content bg-spotify-grayheader/60 rounded-full" />
-        <VscChevronRight className="hover:cursor-pointer p-2 box-content bg-spotify-grayheader/60 rounded-full" />
+        <VscChevronLeft className="hover:cursor-pointer p-2 box-content bg-spotify-black/60 rounded-full" />
+        <VscChevronRight className="hover:cursor-pointer p-2 box-content bg-spotify-black/60 rounded-full" />
       </div>
 
       <div className="hidden md:flex items-center gap-7">

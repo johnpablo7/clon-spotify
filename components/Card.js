@@ -7,7 +7,7 @@ export const Card = () => {
   return (
     <Link
       href="/"
-      className="bg-spotify-shadowcard p-4 rounded-lg hover:bg-spotify-hovercard transition-all group"
+      className="bg-spotify-codgrayshadow p-4 rounded-lg hover:bg-spotify-mineshafthover transition-all group"
     >
       <div className="mb-4 relative">
         <Image
@@ -17,7 +17,7 @@ export const Card = () => {
           alt="anuel"
           className="rounded drop-shadow-2xl mx-auto"
         />
-        <button className="absolute p-3 text-2xl bg-spotify-greenplay rounded-full text-black right-2 bottom-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 ease-out">
+        <button className="absolute p-3 text-2xl bg-spotify-green rounded-full text-black right-2 bottom-2 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 ease-out">
           <RiPlayFill />
         </button>
       </div>

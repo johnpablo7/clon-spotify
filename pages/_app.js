@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
 
-      <div className="bg-spotify-appgray min-h-screen text-spotify-graytext">
+      <div className="bg-spotify-codgray min-h-screen text-spotify-silverchalice">
         <Header setShowSidebar={setShowSidebar} />
         <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
         <main>

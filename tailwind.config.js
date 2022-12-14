@@ -8,15 +8,13 @@ module.exports = {
     extend: {
       colors: {
         spotify: {
-          green: "#1DB954",
-          greenplay: "#1ed760",
-          graytext: "#a7a7a7",
-          appgray: "#121212",
-          shadowcard: "#181818",
-          hovercard: "#2f2f2f",
-          grayheader: "#020202",
-          lightgray: "#B3B3B3",
-          orangeheader: "#672B17",
+          green: "#1ED760", // bg-play
+          silverchalice: "#A7A7A7", // text
+          codgray: "#121212", // bg-app
+          codgrayshadow: "#181818", // card-shadow
+          mineshafthover: "#2f2f2f", // card-hover
+          black: "#020202", // bg-header/arrow
+          espresso: "#672B17", // mobile-header
         },
       },
     },
